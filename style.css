@@ -1,0 +1,307 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+span {
+    color: orangered;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.contact {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+}
+
+/* Home Section */
+.home {
+    width: 100%;
+    min-height: 100vh; /* Adjusted to cover full viewport height */
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-size: 16px; /* Adjusted for readability */
+    margin: 25px 0 30px;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1 {
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px; /* Adjusted for readability */
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: orangered;
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px 12%;
+    background: #fff;
+}
+
+.projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 20px; /* Space between image and info */
+}
+
+.project img {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-info {
+    max-width: 700px;
+}
+
+.project-info h3 {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+}
+
+.project-info p {
+    font-size: 1em;
+    margin: 0 0 10px;
+}
+
+.project-info a {
+    background: orangered;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Education Section */
+.education {
+    padding: 40px 12%;
+    background: #fff;
+}
+
+.education-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certificates {
+    display: flex;
+    gap: 30px; /* Space between certificates */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.certificate {
+    flex: 1;
+    max-width: 500px; /* Adjust max width as needed */
+    text-align: center;
+}
+
+.certificate img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 300px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.certificate p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+/* Contact Section */
+.contact {
+    padding: 20px 10%;
+    background: #f4f4f4;
+    text-align: center; /* Center text and social links */
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center the social links horizontally */
+    gap: 20px; /* Space between icons */
+}
+
+.social-link img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    transition: transform 0.3s ease;
+}
+
+.social-link img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icons on hover */
+}
+
+/* Contact Section */
+
+
+.social-links {
+    display: flex;
+    gap: 20px; /* Space between social icons */
+}
+
+.social-link img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+}
+
+/* Education and Experience Sections */
+.experience {
+    padding: 40px 12%;
+    background: #fff;
+}
+
+.experience-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.img-box img {
+    border-radius: 50%;
+    width: 300px;
+}
